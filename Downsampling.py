@@ -42,7 +42,7 @@ def down_sample(input_wav, origin_sr, resample_sr, save_path):
     sf.write(save_path + '/' + os.path.basename(file_name[i]), resample, resample_sr, format='WAV', endian='LITTLE')
 
 
-dir_name = '/home/eunmi/PycharmProjects/downsampling/data/'
+dir_name = '/home/eunmi/PycharmProjects/downsampling/data'
 file_name = read_path_list(dir_name, extention='wav')
 
 for i in range(len(file_name)):
